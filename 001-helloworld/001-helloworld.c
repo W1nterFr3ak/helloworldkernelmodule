@@ -9,5 +9,10 @@ static int __init lkm_init(void){
 
 }
 
+static void __exit lkm_exit(void){
+	pr_info("Good bye\n");
+}
+
 
 module_init(lkm_init);
+module_exit(lkm_exit);
